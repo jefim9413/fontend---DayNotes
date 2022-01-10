@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const api = axios.create({
-    baseURL: 'http://localhost:33333'
+    baseURL: 'https://backend-day-notes.vercel.app'
 });
 
 export default api;
