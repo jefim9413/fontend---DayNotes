@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const api = axios.create({
-    baseURL: 'https://backend-day-notes.vercel.app'
+    baseURL: 'back-day-notes-aztuxon40-jefim9413.vercel.app'
 });
 
 export default api;
