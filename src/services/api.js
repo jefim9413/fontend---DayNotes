@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const api = axios.create({
-    baseURL: 'backend-day-notes.vercel.app'
+    baseURL: 'https://daynotes-backend.herokuapp.com'
 });
 
 export default api;
