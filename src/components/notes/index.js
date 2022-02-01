@@ -45,8 +45,8 @@ function Notes({ data , handleDelete , handleChangePriority}){
 
             <textarea 
               defaultValue= {data.notes}
-              onClick = {e =>handleEdit(e.target.notes, data.priority)}
-              onChange = {e => setChangedNote(e.target.value)} 
+              onClick = {e =>handleEdit(e.target, data.priority)}
+              onChange = {e => setChangedNote(e.target.notes)} 
               onBlur = {e => handleSave(e.target,data.notes)}
             />
             
