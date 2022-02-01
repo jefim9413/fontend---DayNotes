@@ -39,13 +39,12 @@ function Notes({ data , handleDelete , handleChangePriority}){
 
               <div>
                 <AiTwotoneDelete size="20" onClick = {()=> handleDelete (data._id)} />
-                <h1> dfdfdfd </h1>
               </div>
 
             </div>
 
             <textarea 
-              defaultValue= {data.notes}
+              defaultValue= {data.target.notes}
               onClick = {e =>handleEdit(e.target, data.priority)}
               onChange = {e => setChangedNote(e.target.value)} 
               onBlur = {e => handleSave(e.target,data.notes)}
