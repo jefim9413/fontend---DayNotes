@@ -51,6 +51,7 @@ function Notes({ data , handleDelete , handleChangePriority}){
             />
             
             <span>
+              <h1> aqui</h1>
               <AiOutlineExclamationCircle size="20" onClick = {()=> handleChangePriority(data._id)}/>
             </span>            
           </li>

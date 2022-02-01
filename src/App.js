@@ -129,7 +129,7 @@ function App() {
               <textarea 
                 required
                 value={notes}
-                onChange={e=>setNotes(e.target.notes)}
+                onChange={e=>setNotes(e.target.value)}
               />
 
           </div>
