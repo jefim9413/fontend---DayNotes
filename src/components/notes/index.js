@@ -36,12 +36,6 @@ function Notes({ data , handleDelete , handleChangePriority}){
             <div>
               
               <strong>{data.title}</strong>
-              <textarea 
-              defaultValue= {data.notes}
-              onClick = {e =>handleEdit(e.target, data.notes)}
-              onChange = {e => setChangedNote(e.target.value)} 
-              onBlur = {e => handleSave(e.target,data.notes)}
-            />
 
               <div>
                 <AiTwotoneDelete size="20" onClick = {()=> handleDelete (data._id)} />
@@ -51,12 +45,13 @@ function Notes({ data , handleDelete , handleChangePriority}){
 
             <textarea 
               defaultValue= {data.notes}
-              onClick = {e =>handleEdit(e.target, data.priority)}
+              onClick = {e =>handleEdit(e.target, data.notes)}
               onChange = {e => setChangedNote(e.target.value)} 
               onBlur = {e => handleSave(e.target,data.notes)}
             />
             
             <span>
+              
               <AiOutlineExclamationCircle size="20" onClick = {()=> handleChangePriority(data._id)}/>
             </span>            
           </li>
