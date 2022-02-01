@@ -36,6 +36,7 @@ function Notes({ data , handleDelete , handleChangePriority}){
             <div>
               
               <strong>{data.title}</strong>
+              <strong>{data.title}</strong>
 
               <div>
                 <AiTwotoneDelete size="20" onClick = {()=> handleDelete (data._id)} />
