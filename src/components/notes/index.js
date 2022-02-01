@@ -48,9 +48,7 @@ function Notes({ data , handleDelete , handleChangePriority}){
               onClick = {e =>handleEdit(e.target, data.priority)}
               onChange = {e => setChangedNote(e.target.value)} 
               onBlur = {e => handleSave(e.target,data.notes)}
-            >
-              {data.notes}
-            </textarea>
+            />
             
             <span>
               
